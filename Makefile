@@ -7,7 +7,6 @@ DOCKER_REGISTRY=infinyon
 DOCKER_IMAGE=$(DOCKER_REGISTRY)/fluvio
 TARGET_LINUX=x86_64-unknown-linux-musl
 TARGET_DARWIN=x86_64-apple-darwin
-TARGET?=$(TARGET_LINUX)
 CLI_BUILD=fluvio_cli
 BUILD_PROFILE=$(if $(RELEASE),release,debug)
 FLUVIO_BIN=$(if $(TARGET),./target/$(TARGET)/$(BUILD_PROFILE)/fluvio,./target/$(BUILD_PROFILE)/fluvio)
