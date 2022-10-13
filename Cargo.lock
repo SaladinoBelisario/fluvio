@@ -1715,7 +1715,7 @@ dependencies = [
  "indicatif 0.17.1",
  "k8-client",
  "k8-config",
- "k8-types",
+ "k8-types 0.6.1",
  "pretty_assertions",
  "semver 1.0.14",
  "serde",
@@ -1783,8 +1783,8 @@ dependencies = [
  "indicatif 0.17.1",
  "k8-client",
  "k8-config",
- "k8-metadata-client",
- "k8-types",
+ "k8-metadata-client 5.0.0",
+ "k8-types 0.6.1",
  "once_cell",
  "portpicker",
  "rand 0.8.5",
@@ -2035,8 +2035,8 @@ dependencies = [
  "flv-util",
  "futures-util",
  "k8-client",
- "k8-metadata-client",
- "k8-types",
+ "k8-metadata-client 5.0.0",
+ "k8-types 0.6.1",
  "once_cell",
  "rand 0.8.5",
  "regex",
@@ -2249,8 +2249,8 @@ dependencies = [
  "fluvio-stream-model",
  "fluvio-types",
  "futures-lite",
- "k8-metadata-client",
- "k8-types",
+ "k8-metadata-client 5.0.0",
+ "k8-types 0.6.1",
  "once_cell",
  "serde",
  "serde_json",
@@ -2266,7 +2266,7 @@ dependencies = [
  "event-listener",
  "fluvio-future 0.4.2",
  "fluvio-stream-model",
- "k8-types",
+ "k8-types 0.6.1",
  "once_cell",
  "serde",
  "tokio",
@@ -3363,8 +3363,8 @@ dependencies = [
  "hyper",
  "k8-config",
  "k8-diff",
- "k8-metadata-client",
- "k8-types",
+ "k8-metadata-client 4.0.1",
+ "k8-types 0.6.1",
  "pin-utils",
  "rand 0.8.5",
  "serde",
@@ -3409,7 +3409,23 @@ dependencies = [
  "async-trait",
  "futures-util",
  "k8-diff",
- "k8-types",
+ "k8-types 0.6.1",
+ "pin-utils",
+ "serde",
+ "serde_json",
+ "tracing",
+]
+
+[[package]]
+name = "k8-metadata-client"
+version = "5.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "651501c896262bc478f439514f9f36114f88a460f65661ed18688f3886a8ee89"
+dependencies = [
+ "async-trait",
+ "futures-util",
+ "k8-diff",
+ "k8-types 0.7.0",
  "pin-utils",
  "serde",
  "serde_json",
@@ -3421,6 +3437,16 @@ name = "k8-types"
 version = "0.6.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "cf8debf570f7ab9c2fc4c5f4c59d006b58f97de9570248cf940cd8ec086cc202"
+dependencies = [
+ "serde",
+ "serde_json",
+]
+
+[[package]]
+name = "k8-types"
+version = "0.7.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "3e938977687a0aa830d8086bec585d2a32b3adf95c9eda21d1bdadea0bff4ca0"
 dependencies = [
  "serde",
  "serde_json",
