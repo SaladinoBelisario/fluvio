@@ -1149,7 +1149,6 @@ version = "7.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "9ab77dbd8adecaf3f0db40581631b995f312a8a5ae3aa9993188bb8f23d83a5b"
 dependencies = [
- "crossterm 0.26.1",
  "strum",
  "strum_macros",
  "unicode-width",
@@ -2629,7 +2628,7 @@ version = "0.0.0"
 dependencies = [
  "proc-macro2",
  "quote",
- "syn 1.0.109",
+ "syn 2.0.18",
 ]
 
 [[package]]
@@ -2846,7 +2845,7 @@ version = "0.5.2"
 dependencies = [
  "proc-macro2",
  "quote",
- "syn 1.0.109",
+ "syn 2.0.18",
  "tracing",
 ]
 
@@ -2978,7 +2977,7 @@ version = "0.5.0"
 dependencies = [
  "proc-macro2",
  "quote",
- "syn 1.0.109",
+ "syn 2.0.18",
 ]
 
 [[package]]
@@ -3188,7 +3187,7 @@ version = "0.0.0"
 dependencies = [
  "proc-macro2",
  "quote",
- "syn 1.0.109",
+ "syn 2.0.18",
  "trybuild 1.0.42",
 ]
 
@@ -3207,7 +3206,7 @@ dependencies = [
  "quote",
  "rand 0.8.5",
  "serde_json",
- "syn 1.0.109",
+ "syn 2.0.18",
  "tokio",
  "tracing",
  "trybuild 1.0.42",
@@ -3250,7 +3249,7 @@ dependencies = [
  "semver 1.0.17",
  "serde",
  "serde_json",
- "syn 1.0.109",
+ "syn 2.0.18",
  "tokio",
  "tracing",
  "uuid",
