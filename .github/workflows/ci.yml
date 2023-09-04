@@ -79,7 +79,7 @@ jobs:
       RELEASE_NAME: release
       RELEASE: true
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Print env
         run: |
@@ -252,7 +252,7 @@ jobs:
       RUST_BIN_DIR: target/${{ matrix.rust-target }}/debug
       RELEASE_NAME: debug
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       # If this job is being run by Bors (it was pushed to staging),
       # then build and run in release mode
@@ -374,7 +374,7 @@ jobs:
       RUSTV: ${{ matrix.rust }}
       TARGET: ${{ matrix.rust-target }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Install Rust ${{ matrix.rust }}
         uses: actions-rs/toolchain@v1
         with:
@@ -429,7 +429,7 @@ jobs:
       RELEASE: true
       RELEASE_NAME: release
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Install Rust ${{ matrix.rust }}
         uses: actions-rs/toolchain@v1
         with:
@@ -454,7 +454,7 @@ jobs:
       RUST_BACKTRACE: full
       RUSTV: ${{ matrix.rust }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Install Rust ${{ matrix.rust }}
         uses: actions-rs/toolchain@v1
         with:
@@ -486,7 +486,7 @@ jobs:
       RUST_BACKTRACE: full
       RUSTV: ${{ matrix.rust }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Install Rust ${{ matrix.rust }}
         uses: actions-rs/toolchain@v1
         with:
@@ -522,7 +522,7 @@ jobs:
       RUST_BACKTRACE: full
       RUSTV: ${{ matrix.rust }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Install Rust ${{ matrix.rust }}
         uses: actions-rs/toolchain@v1
         with:
@@ -551,7 +551,7 @@ jobs:
       RUST_BACKTRACE: full
       RUSTV: ${{ matrix.rust }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Install Rust ${{ matrix.rust }}
         uses: actions-rs/toolchain@v1
         with:
@@ -601,7 +601,7 @@ jobs:
             batch,
           ]
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Download artifact - fluvio
         uses: actions/download-artifact@v3
         with:
@@ -721,7 +721,7 @@ jobs:
         rust: [stable]
     steps:
       # Needed for k8-util/docker/build.sh
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       # Download artifacts
       - name: Download fluvio-run
@@ -774,7 +774,7 @@ jobs:
         k8: [k3d]
         spu: [1,2]
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       # Download artifacts
       - name: Download artifact - fluvio
         uses: actions/download-artifact@v3
@@ -881,7 +881,7 @@ jobs:
         os: [ubuntu-latest]
         run: [r1]
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Setup K3d
         run: |
           curl -s https://raw.githubusercontent.com/rancher/k3d/main/install.sh | TAG=${{ env.K3D_VERSION }} bash
@@ -954,7 +954,7 @@ jobs:
             cli_version: stable
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Install Rust ${{ matrix.rust }}
         uses: actions-rs/toolchain@v1
         with:
@@ -1124,7 +1124,7 @@ jobs:
           - 1
     steps:
       - name: Checkout Source Code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       # Download Artifacts from Development Build (This Commit)
       - name: Download artifact - fluvio
@@ -1215,7 +1215,7 @@ jobs:
       - partition_test
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Download x86_64-unknown-linux-musl Docker Image as Artifact
         uses: actions/download-artifact@v3
         with:
@@ -1257,7 +1257,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions: write-all
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       #- name: Login GH CLI
       #  run: gh auth login --with-token < <(echo ${{ secrets.GITHUB_TOKEN }})
       - name: Delete old release
@@ -1277,7 +1277,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions: write-all
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       #- name: Login GH CLI
       #  run: gh auth login --with-token < <(echo ${{ secrets.GITHUB_TOKEN }})
       - name: package helm
