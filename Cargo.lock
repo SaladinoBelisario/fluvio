@@ -3177,7 +3177,7 @@ dependencies = [
  "adaptive_backoff",
  "anyhow",
  "async-channel",
- "async-io 1.13.0",
+ "async-io 2.1.0",
  "async-lock",
  "async-net",
  "async-rwlock",
