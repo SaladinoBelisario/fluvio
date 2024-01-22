@@ -98,7 +98,7 @@ eyre = { version = "0.6", default-features = false }
 flate2 = { version = "1.0.25" }
 futures = { version = "0.3.1" }
 futures-channel = "0.3"
-futures-lite = "1.11"
+futures-lite = "2.0"
 futures-util = { version = "0.3.6", default-features = false }
 handlebars = "4"
 hdrhistogram = "7.0"
