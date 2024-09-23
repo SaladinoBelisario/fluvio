@@ -30,7 +30,7 @@ inventory = { workspace = true }
 tokio = { workspace = true, features = ["macros"] }
 comfy-table = { workspace = true }
 hdrhistogram = { workspace = true }
-crc = "3.0"
+crc = "3.2"
 fork = "0.1"
 crossbeam-channel = { workspace = true }
 sysinfo = { workspace = true }
