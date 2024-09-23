@@ -276,7 +276,7 @@ dependencies = [
  "async-lock 3.1.2",
  "async-task",
  "concurrent-queue",
- "fastrand 2.0.1",
+ "fastrand 2.1.1",
  "futures-lite 2.0.1",
  "slab",
 ]
@@ -638,7 +638,7 @@ dependencies = [
  "async-channel 2.1.1",
  "async-lock 3.1.2",
  "async-task",
- "fastrand 2.0.1",
+ "fastrand 2.1.1",
  "futures-io",
  "futures-lite 2.0.1",
  "piper",
@@ -2132,9 +2132,9 @@ dependencies = [
 
 [[package]]
 name = "fastrand"
-version = "2.0.1"
+version = "2.1.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "25cbce373ec4653f1a01a31e8a5e5ec0c622dc27ff9c4e6606eefef5cbbed4a5"
+checksum = "e8c02a5121d4ea3eb16a80748c74f5549a5665e4c21333c6098f283870fbdea6"
 
 [[package]]
 name = "fd-lock"
@@ -3094,7 +3094,7 @@ dependencies = [
  "comfy-table",
  "crc",
  "crossbeam-channel",
- "fastrand 2.0.1",
+ "fastrand 2.1.1",
  "fluvio",
  "fluvio-cli",
  "fluvio-cluster",
@@ -3450,7 +3450,7 @@ version = "2.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d3831c2651acb5177cbd83943f3d9c8912c5ad03c76afcc0e9511ba568ec5ebb"
 dependencies = [
- "fastrand 2.0.1",
+ "fastrand 2.1.1",
  "futures-core",
  "futures-io",
  "memchr",
@@ -3775,7 +3775,7 @@ version = "0.1.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "9f82c41937f00e15a1f6cb0b55307f0ca1f77f4407ff2bf440be35aa688c6a3e"
 dependencies = [
- "fastrand 2.0.1",
+ "fastrand 2.1.1",
 ]
 
 [[package]]
@@ -5444,7 +5444,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "668d31b1c4eba19242f2088b2bf3316b82ca31082a8335764db4e083db7485d4"
 dependencies = [
  "atomic-waker",
- "fastrand 2.0.1",
+ "fastrand 2.1.1",
  "futures-io",
 ]
 
@@ -6825,7 +6825,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7ef1adac450ad7f4b3c28589471ade84f25f731a7a0fe30d71dfa9f60fd808e5"
 dependencies = [
  "cfg-if",
- "fastrand 2.0.1",
+ "fastrand 2.1.1",
  "redox_syscall 0.4.1",
  "rustix 0.38.28",
  "windows-sys 0.48.0",
