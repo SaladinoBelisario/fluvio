@@ -21,7 +21,7 @@ madato = "0.5.3"
 rand = { workspace = true }
 serde = { workspace = true , features = ['derive'] }
 serde_yaml = { workspace = true }
-statrs = "0.16.0"
+statrs = "0.17.1"
 thiserror = { workspace = true }
 tracing = {workspace = true }
 
